@@ -1,13 +1,17 @@
 [Unit]
-Description=Small description of the service
+Description=sirene-ld-web node app
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/script >> /var/log/__APP__/__APP__.log 2>&1
+WorkingDirectory=__FINALPATH__
+Environment="PATH=__ENV_PATH__"
+ExecStart=__YNH_NPM__ start
+StandardOutput=append:/var/log/__APP__/__APP__.log
+StandardError=inherit
+Restart=always
 
 [Install]
 WantedBy=multi-user.target

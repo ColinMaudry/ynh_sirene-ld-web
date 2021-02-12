@@ -1,84 +1,68 @@
-# Usage of this package (REMOVE THIS SECTION BEFORE RELEASE)
-- Copy this app before working on it.
-- Edit the `conf/nginx.conf` file to match app prerequisites.
-- Edit the `manifest.json` with app specific info.
-- Edit the `install`, `upgrade`, `remove`, `backup`, and `restore` scripts.
-  - Using the [script helpers documentation.](https://yunohost.org/#/packaging_apps_helpers)
-- Add a `LICENSE` file for the package.
-- Edit `README.md` and `README_fr.md`.
+# sirene-ld-web pour YunoHost
 
-# Example app for YunoHost
+<!-- [![Niveau d'intégration](https://dash.yunohost.org/integration/sirene-ld-web.svg)](https://dash.yunohost.org/appci/app/sirene-ld-web) ![](https://ci-apps.yunohost.org/ci/badges/sirene-ld-web.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/sirene-ld-web.maintain.svg)
+[![Installer sirene-ld-web avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=sirene-ld-web) -->
 
-[![Integration level](https://dash.yunohost.org/integration/REPLACEBYYOURAPP.svg)](https://dash.yunohost.org/appci/app/REPLACEBYYOURAPP) ![](https://ci-apps.yunohost.org/ci/badges/REPLACEBYYOURAPP.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/REPLACEBYYOURAPP.maintain.svg)  
-[![Install REPLACEBYYOURAPP with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=REPLACEBYYOURAPP)
+> *Ce package vous permet d'installer sirene-ld-web rapidement et simplement sur un serveur YunoHost.
+Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
-*[Lire ce readme en français.](./README_fr.md)*
+## Vue d'ensemble
+Description rapide de cette application.
 
-> *This package allows you to install REPLACEBYYOURAPP quickly and simply on a YunoHost server.  
-If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
+**Version incluse :** 1.0
 
-## Overview
-Quick description of this app.
+## Captures d'écran
 
-**Shipped version:** 1.0
+![sireneld](https://static.data.gouv.fr/images/69/21d3341a07421ab774b82a167fdcd7.png)
 
-## Screenshots
+## Démo
 
-![](Link to a screenshot of this app.)
-
-## Demo
-
-* [Official demo](Link to a demo site for this app.)
+* [Démo officielle](https://sireneld.io/commande-publique)
 
 ## Configuration
 
-How to configure this app: From an admin panel, a plain file with SSH, or any other way.
+Comment configurer cette application : via le panneau d'administration, un fichier brut en SSH ou tout autre moyen.
 
 ## Documentation
 
- * Official documentation: Link to the official documentation of this app
- * YunoHost documentation: If specific documentation is needed, feel free to contribute.
+ * [Documentation officielle](https://github.com/colinmaudry/sirene-ld-web)
 
-## YunoHost specific features
+## Caractéristiques spécifiques YunoHost
 
-#### Multi-user support
+#### Support multi-utilisateur
 
-Are LDAP and HTTP auth supported?
-Can the app be used by multiple users?
+* Pas d'authentification dans cette application
 
-#### Supported architectures
+#### Architectures supportées
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
+<!-- * x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/sirene-ld-web%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/sirene-ld-web/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/sirene-ld-web%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/sirene-ld-web/) -->
 
 ## Limitations
 
-* Any known limitations.
+* n/a
 
-## Additional information
+## Liens
 
-* Other info you would like to add about this app.
-
-**More info on the documentation page:**  
-https://yunohost.org/packaging_apps
-
-## Links
-
- * Report a bug: https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/issues
- * App website: Link to the official website of this app.
- * Upstream app repository: Link to the official repository of the upstream app.
- * YunoHost website: https://yunohost.org/
+ * Signaler un bug : https://github.com/colinmaudry/ynh_sirene-ld-web/issues
+ * Site de l'application : Lien vers le site officiel de cette application.
+ * [Dépôt de l'application principale](https://github.com/colinmaudry/sirene-ld-web).
+ * Site web YunoHost : https://yunohost.org/
 
 ---
 
-## Developer info
+## Informations pour les développeurs
 
-**Only if you want to use a testing branch for coding, instead of merging directly into master.**
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing).
+**Seulement si vous voulez utiliser une branche de test pour le codage, au lieu de fusionner directement dans la banche principale.**
+Merci de faire vos pull request sur la [branche develop](https://github.com/YunoHost-Apps/sirene-ld-web_ynh/tree/develop).
 
-To try the testing branch, please proceed like that.
+Pour essayer la branche develop, procédez comme suit.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
-or
-sudo yunohost app upgrade REPLACEBYYOURAPP -u https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/sirene-ld-web_ynh/tree/develop --debug
+```
+
+ou
+
+```
+sudo yunohost app upgrade sirene-ld-web -u https://github.com/YunoHost-Apps/sirene-ld-web_ynh/tree/develop --debug
 ```
